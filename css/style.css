@@ -37,6 +37,7 @@ input{
     border: 1px solid #ccc;
     margin: 12px 0;
     padding: 20px 10px;
+    border-radius: 5px;
 }
 
 button{
@@ -46,10 +47,11 @@ button{
     border: 0;
     color: white;
     margin: 20px 0;
+    border-radius: 5px;
 }
 
 button:hover{
-    background-color: #1da5ff;
+    background-color: #006bb3;
 }
 
 .cta-cadastro{
@@ -62,4 +64,32 @@ button:hover{
 a{
     color: black;
     font-weight: bold;
+}
+
+a:hover{
+    color: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 1055px) {
+    .login{
+        margin-left: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 950px) {
+    .login{
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    main{
+        flex-direction: column;
+    }
+
+    .login{
+        margin-top: 50px;
+    }
 }
