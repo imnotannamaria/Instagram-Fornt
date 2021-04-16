@@ -1,5 +1,15 @@
 *{
+    padding: 0;
+	margin: 0;
     box-sizing: border-box;
+}
+
+li{
+    margin-left: 20px;
+}
+
+html,body{
+    height: 100%;
 }
 
 body{
@@ -72,7 +82,13 @@ a:hover{
     color: rgb(71, 71, 71);
 }
 
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 /* REGISTRO */
+/* ============================================================================================================== */
 
 .info-cadastro{
     font-size: 12px;
@@ -85,7 +101,32 @@ a:hover{
     font-weight: bold;
 }
 
-/* INDEX */
+/* INDEX | POST */
+/* ============================================================================================================== */
+
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+header div{
+    margin-left: 1500px;
+}
+
+header img{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 
 .post{
     display: flex;
@@ -129,7 +170,7 @@ a:hover{
 .post-info-1{
     display: flex;
     justify-content: space-between;
-    margin: 0 10px 0 10px;
+    margin: 10px 10px 0 10px;
 }
 
 .post-info-1 > p{
@@ -138,7 +179,7 @@ a:hover{
 
 svg{
     cursor: pointer;
-    margin-top: 20px;
+
 }
 
 svg:hover path {
@@ -148,6 +189,7 @@ svg:hover path {
 .post-info-2{
     margin-left: 10px;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .post-footer{
@@ -180,7 +222,9 @@ svg:hover path {
     color: #4a80ff;
 }
 
+
 /* RESPONSIVO */
+/* ============================================================================================================== */
 
 @media screen and (max-width: 1055px) {
     .login{
